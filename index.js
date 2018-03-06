@@ -24,19 +24,20 @@ function listen (userPort, userFolder, userCb) {
   if (userFolder) config.folder = path.join(__dirname, userFolder)
   if (userPort) config.port = userPort
   if (userCb) config.CB = userCb
+
+  // Static default routes...
+  app.get(/^(.+)$/, function(req, res){ 
+    log(req, req.params[0])
+    res.sendFile( req.params[0], {root: config.folder} )
+  })
   app.listen(config.port, config.CB)
   return app
 }
 
-// Process any input file...
-app.get(/^(.+)$/, function(req, res){ 
-  log(req, req.params[0])
-  res.sendFile( req.params[0], {root: config.folder} )
-})
-
 // Export a listen function...
 module.exports = {
-  listen: listen
+  listen: listen,
+  log: log,
+  app: app,
+  express: express
 }
-
-listen(8002)

@@ -1,16 +1,19 @@
 {
-  "name": "ultra-simple-web-server",
-  "version": "1.0.0",
+  "name": "usws",
+  "version": "1.0.1",
   "description": "About as simple as a web server can get, with logging and settings.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://nick-steele@bitbucket.org/gsihealth/examples.git"
+    "url": "https://github.com/onexdata/usws"
   },
   "keywords": [
     "web",
     "webserver",
-    "server"
+    "server",
+    "simple",
+    "express",
+    "connect"
   ],
   "author": "Nick Steele <nick.steele@gsihealth.com>",
   "license": "MIT",
