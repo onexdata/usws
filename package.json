@@ -1,6 +1,6 @@
 {
   "name": "usws",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "About as simple as a web server can get, with logging and settings.",
   "main": "index.js",
   "repository": {

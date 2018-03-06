@@ -13,7 +13,7 @@ var express = require("express")
 var path = require('path')
 var app = express()
 
-config.folder = path.join(__dirname, config.folder)
+config.folder = path.join(__dirname, '../..',config.folder)
 
 // Simple logger...
 function log(req, msg) {
