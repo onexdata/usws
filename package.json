@@ -1,0 +1,20 @@
+{
+  "name": "ultra-simple-web-server",
+  "version": "1.0.0",
+  "description": "About as simple as a web server can get, with logging and settings.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://nick-steele@bitbucket.org/gsihealth/examples.git"
+  },
+  "keywords": [
+    "web",
+    "webserver",
+    "server"
+  ],
+  "author": "Nick Steele <nick.steele@gsihealth.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.2"
+  }
+}
