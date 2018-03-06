@@ -35,7 +35,7 @@ Intermediate... (returns express app, port 8001, /statics folder)
 var app = require('usws').listen(8001, '/statics')
 ```
 
-Advanced... (returns express app, port 8080, /statics folder, custom call back, and extends the express app with a custom login route...)
+Advanced... (returns express app, port 8080, /statics folder, custom call back, and extends the express app with a custom login route)
 ```
 var web = require('usws')
 
